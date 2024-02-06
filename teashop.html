@@ -1,1 +1,166 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Tea Shop</title>
+ <style>
+ body {
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ margin: 0;
+ padding: 0;
+ background-image: url(bg.jpg);
+ }
+ header {
+ color: yellow;
+ padding: 20px;
+ text-align: center;
+ }
+ .logo {
+ max-width: 150px; /* Adjust the width as needed */
+ }
+ nav {
+ background-color: #444;
+ padding: 10px;
+ text-align: center;
+ }
+ nav a {
+ color: #fff;
+ text-decoration: none;
+ margin: 0 15px;
+ font-weight: bold;
+ }
+ section {
+ max-width: 800px;
+ margin: 20px auto;
+ padding: 20px;
+ color: whitesmoke;
+ border-radius: 5px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+ h2 {
+ color: yellow;
+ }
+ .tea {
+ display: flex;
+ justify-content: space-between;
+ margin: 20px 0;
+ }
+ .tea img {
+ width: 200px;
+ height: 150px;
+ border-radius: 5px;
+ }
+ footer {
+ background-color: #444;
+ color: white;
+ text-align: center;
+ padding: 10px;
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+ }
+ form {
+ max-width: 400px;
+ margin: 0 auto;
+ background-color: #fff;
+ padding: 20px;
+ border-radius: 5px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+ input[type="text"],
+ input[type="email"],
+ textarea,
+ input[type="number"] {
+ width: 100%;
+ padding: 10px;
+ margin-bottom: 10px;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ }
+ input[type="submit"] {
+ background-color: #333;
+ color: #fff;
+ padding: 10px;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ text-align: center;
+ }
+ .info {
+ text-align: center;
+ margin-top: 20px;
+ }
+ .order {
+ color: black;
+ }
+ </style>
+</head>
+<body>
+ <header>
+ <img src="logo.png" alt="Tea Heaven Logo" class="logo">
+ <h1>Tea heaven</h1>
+ </header>
+ <nav>
+ <a href="#">Home</a>
+ <a href="#">Menu</a>
+ <a href="#">About Us</a>
+ <a href="#">Contact</a>
+ </nav>
+ <section>
+ <h2>Featured Teas</h2>
+ <div class="tea">
+ <img src="green.jpeg" alt="Green Tea">
+ <div>
+ <p>Green Tea</p>
+ <p>Price: Rs.30</p>
+ </div>
+ </div>
+ <hr>
+ <div class="tea">
+ <img src="black.jpg" alt="Black Tea">
+ <div>
+ <p>Black Tea</p>
+ <p>Price: Rs.25</p>
+ </div>
+ </div>
+ <hr>
+ <div class="tea">
+ <img src="herbal.jpeg" alt="Herbal Tea">
+ <div>
+ <p>Herbal Tea</p>
+ <p>Price: Rs.20</p>
+ </div>
+ </div>
+ <hr>
+ </section>
+ <section class="order">
+ <h2>Place Your Order</h2>
+ <form>
+ <label for="name">Name:</label>
+ <input type="text" id="name" name="name" required>
+ <label for="email">Email:</label>
+ <input type="email" id="email" name="email" required>
+ <label for="teaType">Tea Type:</label>
+ <select id="teaType" name="teaType">
+ <option value="Green Tea">Green Tea</option>
+ <option value="Black Tea">Black Tea</option>
+ <option value="Herbal Tea">Herbal Tea</option>
+ </select>
+ <label for="quantity">Quantity:</label>
+ <input type="number" id="quantity" name="quantity" min="1" required>
+ <label for="additionalInfo">Additional Information:</label>
+ <textarea id="additionalInfo" name="additionalInfo"></textarea>
+ <input type="submit" value="Place Order">
+ </form>
+ </section>
+ <section class="info">
+ <h2>Visit Us</h2>
+ <p>Address: 123 Tea Street, Chennai</p>
+ <p>Business Hours: Mon-Sat, 9 AM - 7 PM</p>
+ </section>
+ <footer>
+ &copy; 2023 Tea Shop
+ </footer>
+</body>
+</html>
